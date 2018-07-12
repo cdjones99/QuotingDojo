@@ -1,0 +1,7 @@
+<h1>Welcome to the Quotes Page!</h1>
+
+@{
+    foreach(var quote in ViewBag.quotes) {
+        <p>@quote["user"] -- @quote["text"]</p>
+    }
+}
